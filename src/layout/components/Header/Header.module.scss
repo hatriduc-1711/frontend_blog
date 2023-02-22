@@ -1,0 +1,96 @@
+.wrapper {
+    width: 100%;
+    height: 5rem;
+    background-color: var(--header-color);
+
+    .height {
+        display: flex;
+        height: 100%;
+
+        .logo {
+            display: flex;
+            align-items: center;
+            width: 9rem;
+            height: 100%;
+
+            img {
+                width: 100%;
+                height: 100%;
+                object-fit: contain;
+            }
+        }
+
+        .navbar {
+            display: flex;
+            align-items: center;
+            height: 100%;
+            flex: 1;
+            margin-left: 4rem;
+
+            .nav-item {
+                font-size: 1.7rem;
+                font-weight: 500;
+                color: #fff;
+                transition: all 0.2s linear;
+
+                & + .nav-item {
+                    margin-left: 2.5rem;
+                }
+
+                &:hover {
+                    color: #f79646;
+                }
+            }
+        }
+
+        .user-container {
+            display: flex;
+            align-items: center;
+            height: 100%;
+
+            .avatar {
+                width: 2.5rem;
+                height: 2.5rem;
+                border-radius: 10rem;
+                margin-right: 1.5rem;
+                overflow: hidden;
+
+                img {
+                    width: 100%;
+                    height: 100%;
+                    object-fit: cover;
+                }
+            }
+
+            .btn {
+                width: 5.5rem;
+
+                div {
+                    font-size: 1.3rem;
+                    color: #fff;
+                }
+
+                &:hover {
+                    background-color: var(--outstanding-color);
+                    opacity: 0.7;
+                }
+            }
+        }
+    }
+}
+
+.active {
+    position: relative;
+    color: #f79646 !important;
+
+    &::after {
+        position: absolute;
+        content: '';
+        bottom: -4px;
+        left: 1px;
+        width: 4rem;
+        height: 2px;
+        border-radius: 10rem;
+        background-color: var(--outstanding-color);
+    }
+}

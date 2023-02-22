@@ -1,0 +1,19 @@
+// Markdown styles
+.rc-md-editor {
+    border: none !important;
+    padding-bottom: 2rem !important;
+    border-bottom: 1px solid #a2a2a27f !important;
+
+    .rc-md-navigation {
+        background: transparent;
+    }
+
+    .visible {
+        border: none !important;
+    }
+
+    .input {
+        border-right: 1px solid #a2a2a27f !important;
+        overflow-y: auto !important;
+    }
+}

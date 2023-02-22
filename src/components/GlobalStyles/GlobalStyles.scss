@@ -1,0 +1,101 @@
+@import 'normalize.css';
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700&display=swap');
+
+// ---------------------------------------------------------
+:root {
+    --footer-color: #313041;
+    --header-color: #313041;
+    --outstanding-color: #e8604c;
+    --background-button: #313041;
+    --title-color: #313041;
+    --message-error-color: rgb(244, 54, 92);
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+//font
+
+@font-face {
+    font-family: reey;
+    src: url(/assets/fonts/reey-regular.woff);
+    font-weight: 500;
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+}
+
+::-webkit-scrollbar {
+    width: 5px;
+}
+
+::-webkit-scrollbar-track {
+    background: rgba(167, 167, 167, 0.703);
+    border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+    background: var(--outstanding-color);
+    border-radius: 10px;
+}
+
+input,
+button {
+    outline: none;
+    border: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+// -----------------responsive------------------
+.grid {
+    display: block;
+    width: 1170px;
+    margin: 0 auto;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: -15px;
+    margin-right: -15px;
+    margin-bottom: 15px;
+}
+
+.column {
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.column-large {
+    flex: 0 0 60%;
+    max-width: 60%;
+}
+
+.column-2 {
+    flex: 0 0 50%;
+    max-width: 50%;
+}
+
+.column-3 {
+    flex: 0 0 33.3333%;
+    max-width: 33.3333%;
+}
+
+.column-4 {
+    flex: 0 0 25%;
+    max-width: 25%;
+}
+// tablet
+@media screen and (min-width: 46.25em) and (max-width: 63.9375em) {
+}
+
+// mobile
+@media screen and (max-width: 46.1875em) {
+}

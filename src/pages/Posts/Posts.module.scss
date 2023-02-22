@@ -1,0 +1,116 @@
+.title {
+    position: relative;
+    text-align: center;
+    margin-top: 3rem;
+    margin-bottom: 1rem;
+    font-size: 3rem;
+
+    &::before {
+        position: absolute;
+        content: '';
+        width: 18rem;
+        height: 3px;
+        bottom: -0.3rem;
+        left: 50%;
+        transform: translateX(-50%);
+        border-radius: 1rem;
+        background-color: var(--outstanding-color);
+    }
+}
+
+.group-input {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 5rem;
+    box-shadow: 0 1px #a2a2a27f;
+    margin-bottom: 1rem;
+
+    .input-title {
+        flex: 1;
+        height: 100%;
+        padding: 1rem 2rem;
+        font-size: 2.5rem;
+        caret-color: var(--outstanding-color);
+        color: var(--title-color);
+    }
+
+    .upload-background {
+        position: relative;
+        display: flex;
+        align-items: center;
+        height: 100%;
+        width: 20%;
+        padding-left: 1.5rem;
+
+        &::before {
+            position: absolute;
+            content: '';
+            height: 70%;
+            width: 1px;
+            left: 0;
+            top: 50%;
+            transform: translateY(-50%);
+            background-color: #b5b5b59d;
+        }
+
+        .upload-label {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.5rem;
+            width: 4rem;
+            height: 2.5rem;
+            color: #fff;
+            background-color: var(--outstanding-color);
+            border-radius: 5px;
+            cursor: pointer;
+
+            &:hover {
+                opacity: 0.7;
+            }
+        }
+
+        .input-background {
+            display: none;
+        }
+
+        .image {
+            position: relative;
+            display: flex;
+            justify-content: center;
+            flex: 1;
+            height: 100%;
+            border: 1px dashed var(--title-color);
+            margin-left: 1.5rem;
+            cursor: pointer;
+
+            span {
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+                font-size: 0.8rem;
+                color: var(--outstanding-color);
+            }
+
+            img {
+                height: 100%;
+                object-fit: contain;
+                z-index: 1;
+            }
+        }
+    }
+}
+
+.MdEditor {
+    caret-color: var(--outstanding-color);
+    ::placeholder {
+        color: #000000;
+    }
+}
+
+.btn-created {
+    margin-top: 2rem;
+    margin-bottom: 3rem;
+}
